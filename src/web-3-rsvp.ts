@@ -54,8 +54,11 @@ export function handleNewEventCreated(event: NewEventCreated): void {
             "https://ipfs.io/ipfs/bafybeibssbrlptcefbqfh4vpw2wlmqfj2kgxt3nil4yujxbmdznau3t5wi/event.png";
           newEvent.imageURL = fallbackURL;
         }
+
+
       }
     }
+    
     newEvent.save();
   }
 }
